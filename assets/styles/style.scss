@@ -108,7 +108,7 @@ body {
 }
 
 .section-title {
-    padding: 65px 0 40px 0;
+    padding: 0 0 40px 0;
     font-size: 40px;
     line-height: 50px;
     color: $pr-text-color;
@@ -122,7 +122,13 @@ body {
     margin: 0 auto;
 }
 
+.section-title_footer {
+    color: #fff;
+    text-align: left;
+}
+
 .about {
+    padding: 65px 0 20px 0;
     background-color: $pr-bg-color;
 }
 
@@ -130,7 +136,6 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding-bottom: 20px;
     width: 80%;
 }
 
@@ -179,6 +184,7 @@ body {
 }
 
 .portfolio {
+    padding: 65px 0 50px 0;
     background-color: $pr-bg-color;
 }
 
@@ -200,6 +206,211 @@ body {
     }
 }
 
+.portfolio__more {
+    padding: 15px 0;
+    font-size: 30px;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+
+    path {
+        transition: .2s;
+    }
+}
+
+.portfolio__more:hover {
+    background-color: rgba(83, 55, 56, 0.3);
+    color: #fff;
+    transition: .2s;
+
+    path {
+        fill: #fff;
+        transition: .2s;
+    }
+}
+
+.team {
+    padding: 50px 0;
+    background-color: #E2C4BA;
+}
+
+.team__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-bottom: 65px;
+    width: 80%;
+}
+
+.team__list_numbered {
+    counter-reset: listCounter;
+}
+
+.team__list-item {
+    margin: 0 10px;
+    color: $pr-text-color;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.team__list-item::before {
+    counter-increment: listCounter;
+    content: counter(listCounter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 100%;
+    background-color: #8D7370;
+}
+
+.team__employee {
+    max-width: 320px;
+    margin: 5px 20px;
+}
+
+.team__photo {
+    display: block;
+    max-height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.team__employee-description {
+    margin-top: 10px;
+    color: $pr-text-color;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.reviews {
+    padding: 65px 0;
+    background-color: $pr-bg-color;
+}
+
+.reviews__container {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+    height: 600px;
+}
+
+.reviews__list {
+    width: 99999px;
+    transition: .4s;
+    height: 100%;
+}
+
+.reviews__review {
+    vertical-align: top;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 85px;
+    width: 80vw;
+    height: 100%;
+}
+
+.reviews__text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 40%;
+    font-size: 18px;
+    line-height: 30px;
+    color: $pr-text-color;
+    white-space: pre-line;
+    transition: .2s;
+
+    p {
+        width: 100%;
+    }
+
+    span {
+        width: 100%;
+    }
+}
+
+.reviews__author {
+    text-transform: uppercase;
+}
+
+.reviews__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    float: right;
+    height: 100%;
+    width: 49%;
+    transition: .2s;
+}
+
+.reivews__image {
+    width: 405px;
+    height: 270px;
+
+    img {
+        display: block;
+    }
+}
+
+.reviews__image:first-child {
+    margin-bottom: 15px;
+}
+
+.reviews__animated-item {
+    transition: .2s;
+}
+
+.reviews__animated-item.shadowed {
+    opacity: 0;
+}
+
+.reviews__slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 100%;
+    background-color: #CC8B86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.reviews__slider-button:hover {
+    background-color:rgb(83, 55, 56);
+    transition: .2s;
+}
+
+.reviews__slider-button:active {
+    transform: translate(0, -50%) scale(0.7);
+}
+
+.reviews__slider-button_right {
+    right: 0;
+    transform: translate(0, -50%) rotate(180deg);
+}
+
+.reviews__slider-button_right:active {
+    transform: translate(0, -50%) rotate(180deg) scale(0.8);
+}
+
+.footer {
+    background-color: #8D7370;
+}
 
 @media screen and (max-width: 1400px) {
     .header__bg-image {

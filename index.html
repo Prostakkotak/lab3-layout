@@ -80,7 +80,7 @@
         </section>
         <section class="portfolio">
             <ul class="portfolio__gallery">
-                <h2 class="section-title section-title_portfolio">Наши работы</h2>
+                <h2 class="section-title">Наши работы</h2>
                 <li class="portfolio__photo-row">
                     <img src="./src/images/gallery-1.png" alt="gallery png 1">
                     <img src="./src/images/gallery-2.png" alt="gallery png 2">
@@ -90,7 +90,110 @@
                     <img src="./src/images/gallery-4.png" alt="gallery png 4">
                 </li>
             </ul>
+            <div class="portfolio__more">
+                Смотреть ещё <svg width="61" height="16" viewBox="0 0 61 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z"
+                        fill="#533738" />
+                </svg>
+
+            </div>
         </section>
+        <section class="team">
+            <h2 class="section-title section-title_team">Команда</h2>
+            <ul class="team__list">
+                <li class="team__employee">
+                    <img src="./src/images/team-1.png" alt="team 1" class="team__photo">
+                    <p class="team__employee-description">
+                        Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
+                        и помогает сделать вашу квартиру красивой и уютной.
+                    </p>
+                </li>
+                <li class="team__employee">
+                    <img src="./src/images/team-2.png" alt="team 2" class="team__photo">
+                    <p class="team__employee-description">
+                        С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт
+                        все документы
+                        и ответит на все вопросы.
+                    </p>
+                </li>
+                <li class="team__employee">
+                    <img src="./src/images/team-3.png" alt="team 3" class="team__photo">
+                    <p class="team__employee-description">
+                        Катя тоже занимается дизайном.
+                        Она всегда находит общий язык
+                        с клиентами и точно знает,
+                        как обсутроить дом так, чтобы вам понравилось.
+                    </p>
+                </li>
+            </ul>
+            <h2 class="section-title">Как мы работаем</h2>
+            <ol class="team__list team__list_numbered">
+                <li class="team__list-item">Знакомимся, выезжаем
+                    на объект, утверждаем концепцию, подписывем договор.</li>
+                <li class="team__list-item">Подбираем мебель, текстиль, аксессуры. Делаем 3D-
+                    зуализацию.</li>
+                <li class="team__list-item">Находим нужные магазины, помогаем с доставкой
+                    и оплатой товаров.</li>
+                <li class="team__list-item">Воплощаем проект в жизнь:
+                    расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
+            </ol>
+        </section>
+        <section class="reviews">
+            <h2 class="section-title">Отзывы</h2>
+            <div class="reviews__container" id="reviews-container">
+                <ul class="reviews__list" id="reviews-list">
+                    <li class="reviews__review">
+                        <ul class="reviews__images reviews__animated-item">
+                            <li class="reviews__image"><img src="./src/images/review-1.png" alt=""></li>
+                            <li class="reviews__image"><img src="./src/images/review-2.png" alt=""></li>
+                        </ul>
+
+                        <p class="reviews__text reviews__animated-item">
+                            «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения
+                            своего дома.
+
+                            Работа шла быстро, было очень приятно общаться и взаимодествовайть
+                            с сотрудниками. Не ожидала, что это будет так легко!
+
+                            Буду советовать и своим друзьям к вам обращаться!»
+                            <span class="reviews__author">Анна беловская</span>
+                        </p>
+                    </li>
+                    <li class="reviews__review">
+                        <ul class="reviews__images reviews__animated-item">
+                            <li class="reviews__image"><img src="./src/images/review-1.png" alt=""></li>
+                            <li class="reviews__image"><img src="./src/images/review-2.png" alt=""></li>
+                        </ul>
+
+                        <p class="reviews__text reviews__animated-item">
+                            «я мыслю, следовательно, я существую»
+                            <span class="reviews__author">Рене Декарт</span>
+                        </p>
+                    </li>
+                </ul>
+                <div class="reviews__slider-button reviews__slider-button_left" id="reviews-container__button-left">
+                    <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z"
+                            fill="#F5F2ED" />
+                    </svg>
+                </div>
+                <div class="reviews__slider-button reviews__slider-button_right" id="reviews-container__button-right">
+                    <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z"
+                            fill="#F5F2ED" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <form class="footer__request" onsubmit="return false">
+                <h2 class="section-title section-title_footer">Оставить заявку</h2>
+            </form>
+        </footer>
     </div>
 
     <script src="./src/index.bundle.js"></script>

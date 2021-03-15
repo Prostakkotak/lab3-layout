@@ -11,7 +11,7 @@ module.exports = {
     mode: 'development',
     entry: {
         index: [
-            './js/scripts.js'
+            './js/index.js'
         ],
         styles: [
             './styles/style.scss'
