@@ -189,10 +189,31 @@
                 </div>
             </div>
         </section>
+        <section class="contact">
+            <div class="contact__container">
+                <form class="contact__form" onsubmit="return false">
+                    <h2 class="section-title section-title_contact">Оставить заявку</h2>
+                    <p class="contact__text">Оставьте свои контакты. Менеджер перезвонит
+                        в удобное вам время и ответит на все вопросы.</p>
+
+                    <input type="text" placeholder="Ваше имя" name="name" class="contact__input">
+                    <input type="number" placeholder="Введите телефон" name="phone" class="contact__input">
+
+                    <input type="submit" value="Оставить заявку" class="contact__submit">
+                </form>
+
+                <article class="contact__gmap gmap">
+                    <div class="gmap__canvas"><iframe id="gmap__canvas"
+                            src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                </article>
+            </div>
+        </section>
         <footer class="footer">
-            <form class="footer__request" onsubmit="return false">
-                <h2 class="section-title section-title_footer">Оставить заявку</h2>
-            </form>
+            <div class="footer__contact-info">
+                <span>+7 (981) 857-46-24</span> 
+                <span>г. Санкт-петербург, ул. Большая Конюшенная, 19</span></div>
+            <div class="footer__owner">ИП Королёва А.А.</div>
         </footer>
     </div>
 
