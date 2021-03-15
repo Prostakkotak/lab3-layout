@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Lab3-layout</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__nav">
+                <div class="logo">
+                    <img src="./src/images/logo.png" alt="Logo" class="logo__img">
+                    <p class="logo__title">scandi</p>
+                </div>
+                <ul class="header__list">
+                    <li class="header__item"><a href="#">О компании</a></li>
+                    <li class="header__item"><a href="#">Портфолио</a></li>
+                    <li class="header__item"><a href="#">Команда</a></li>
+                    <li class="header__item"><a href="#">Как мы работаем</a></li>
+                    <li class="header__item"><a href="#">Отзывы клиентов</a></li>
+                    <li class="header__item"><a href="#">Оставить заявку</a></li>
+                </ul>
+                <div class="header__number">+7 (981) 857-46-24</div>
+            </nav>
+            <div class="header__requisition requisition">
+                <h1 class="requisition__title">Поможем сделать вашу квартиру уютнее</h1>
+                <p class="requisition__text">
+                    Подбираем текстиль, мебель и аксессуары
+                    под ваш интерьер, находим магазины
+                    и помогаем организовать доставку
+                </p>
+                <button class="requisition__button">Оставить заявку</button>
+            </div>
+            <img src="./src/images/header-bg.png" alt="" class="header__bg-image">
+        </header>
+        <section class="about">
+            <h2 class="section-title section-title_about">
+                О нас
+            </h2>
+            <div class="about__description-block">
+                <img src="./src/images/about-img.png" alt="" class="about__img">
+                <div class="about__text-block">
+                    <p class="about__text">
+                        Премиальный европейский текстиль — одно из самых главных направлений работы коллектива.
+                        Создавать
+                        неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,
+                        что
+                        по-настоящему вдохновляет дизайнеров нашей студии.
+                    </p>
+                    <p class="about__text">
+                        Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
+                        « Да! Это именно то, что действительно достойно моего дома!»
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="stats">
+            <ul class="stats__list">
+                <li class="stats__item">
+                    <p class="stats__num">5</p>
+                    <p class="stats__text">Лет опыта</p>
+                </li>
+                <li class="stats__item">
+                    <p class="stats__num">100</p>
+                    <p class="stats__text">Проектов</p>
+                </li>
+                <li class="stats__item">
+                    <p class="stats__num">10</p>
+                    <p class="stats__text">наград</p>
+                </li>
+            </ul>
+        </section>
+        <section class="portfolio">
+            <ul class="portfolio__gallery">
+                <h2 class="section-title section-title_portfolio">Наши работы</h2>
+                <li class="portfolio__photo-row">
+                    <img src="./src/images/gallery-1.png" alt="gallery png 1">
+                    <img src="./src/images/gallery-2.png" alt="gallery png 2">
+                </li>
+                <li class="portfolio__photo-row">
+                    <img src="./src/images/gallery-3.png" alt="gallery png 3">
+                    <img src="./src/images/gallery-4.png" alt="gallery png 4">
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="./src/index.bundle.js"></script>
+</body>
+
+</html>
